@@ -1,0 +1,28 @@
+.whoami, .do, .like, .achievement{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+p, li{
+    font-size: 23px;
+}
+h2{
+    font-size: 28px;
+}
+figure{
+    max-width: 100%;
+    height: auto;
+}
+#processor{
+    text-align: right;
+}
+#span{
+    font-size: 13px;
+}
+#twitter, #whatsapp{
+    width: 25px;
+    height: 25px
+}
+footer{
+    margin: auto;
+}
