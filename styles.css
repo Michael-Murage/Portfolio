@@ -21,8 +21,48 @@ figure{
 }
 #twitter, #whatsapp{
     width: 25px;
-    height: 25px
+    height: 25px;
+    border-radius: 10px;
 }
 footer{
     margin: auto;
+}
+.nav{
+    width: 100px;
+    height: 100px;
+}
+*{
+    color: lightgray;
+    /* background-color: #222; */
+    box-sizing: border-box;
+    /* border: 1px solid green; */
+    /* margin: 0; */
+}
+.name{
+    text-decoration: none;
+}
+#nav-container{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    margin-left: 0;
+    box-shadow: black;
+}
+.nav-contacts{
+    display: flex;
+    flex-direction: column;
+}
+#title-name{
+    font-family: oswald, sans-serif;
+    letter-spacing: 1em;
+    font-weight: 700;
+    color: #3c98f5;
+}
+body{
+    background-color: #222;
+}
+.line{
+    text-decoration: underline;
 }
