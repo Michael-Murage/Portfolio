@@ -66,3 +66,6 @@ body{
 .line{
     text-decoration: underline;
 }
+li::marker, .contact{
+    color: #3c98f5;
+}
