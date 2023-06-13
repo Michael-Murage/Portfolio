@@ -9,34 +9,167 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
+    <link id="google-fonts-url" rel="stylesheet" 
+        href="https://fonts.googleapis.com/css2?family=VT323:wght@400&amp;family=VT323&amp;family=Playfair+Display:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;family=Poppins:wght@700&amp;family=Lato:wght@400&amp;family=Montserrat:wght@700&amp;family=Lato:wght@400&amp;family=Rubik:wght@700&amp;family=Karla:wght@400&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto:wght@400&amp;family=Merriweather:wght@700&amp;family=Inter:wght@400&amp;family=Vollkorn:wght@700&amp;family=Open+Sans:wght@400&amp;family=Open+Sans:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap">
 </head>
 <body>
     <nav id="nav-container">
-        <img src="./images/techglobe.jpg" alt="tech-globe" class="nav">
-        <h1 id="title-name">MICHAEL MURAGE</h1>
-        <div class="nav-contacts">
+        <!-- <img src="./images/techglobe.jpg" alt="tech-globe" class="nav"> -->
+        <h1 id="title-name" style="font-family: vollkorn; ">MICHAEL MURAGE</h1>
+        <!-- <div class="nav-contacts">
             <a href="https://twitter.com/mickey_murage"><img id="twitter" src="./images/twittericon.png" alt="twitter" ></a>
-        </div>
+        </div> -->
     </nav>
     <section id="whoami" class="whoami">
-    <h2 class="line contact">WHO IS MICHAEL MURAGE?</h2>
-    <p>I am a 5 foot 9 proactive and enthusiastic individual in my mid 20s 
-        (at the time of writing).
-    </p>
-    <figure id="processor" class="whoami">
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div>
+                <h2 style="font-family: poppins;" class="text-center contact" id="hi">Hi there, I am a ...</h2>
+                <div class="text-center vt323" style="display: inline-block;font-family: vt323;">
+                    <span style="font-size: 30px;"><"</span>
+                    <p id="typing-effect" style="color: var(--brown)">
+
+                    </p>
+                    <span class="cursor"></span><span style="font-size: 30px;">"></span>
+                </div>
+            </div>
+            <figure >
+                <img src="./images/personal_pic.jpg" alt="Michael Murage" style="height: 300px; width: 300px; border-radius: 100%;">
+            </figure>
+        </div>
+    
+    <!-- <figure id="processor" class="whoami">
     <img src="./images/processorchip.jpg" alt="finger touching processor chip" />
-    </figure>
+    </figure> -->
     </section>
     <section id="do" class="do">
-    <h2 class="line contact">WHAT DO YOU DO?</h2>
-    <p>I am a full-stack software developer, graduated from <a href="https://moringaschool.com/">Moringa School</a>.
+        <h2 class="text-center">
+            <a id="about" class="line contact" href="#about">About Me</a>
+        </h2>
+    <p>
+        I am highly skilled in creating visually appealing, user-friendly and high quality web applications.
+         I possess a solid understanding of back-end technologies, enabling seamless integration
+         between front-end and back-end systems.
     </p>
     <figure class="do">
-    <img src="./images/binary.jpg" alt="binarycodes"/>
+    <!-- <img src="./images/binary.jpg" alt="binarycodes"/> -->
     </figure>
     </section>
-    <section id="like" class="like">
-    <h2 class="line contact">WHAT DO YOU LIKE?/WHAT ARE YOUR HOBBIES?</h2>
+    
+    <section id="portfolio">
+        <h2 class="text-center"><a class="line contact" href="#portfolio">Portfolio</a></h2>
+        <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot1.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot2.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot3.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot4.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot5.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot6.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot7.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot8.png" alt="point of sale app screenshot 1">
+                    </div>
+                    <div class="carousel-slide1">
+                        <img src="./images/pos/screenshot9.png" alt="point of sale app screenshot 1">
+                    </div>
+                </div>
+                <p class="text-center">This project simulates a point of sale system written in React and Rails</p>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot1.png" alt="auctioning platform screenshot 1">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot2.png" alt="auctioning platform screenshot 2">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot3.png" alt="auctioning platform screenshot 3">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot4.png" alt="auctioning platform screenshot 4">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot5.png" alt="auctioning platform screenshot 5">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot6.png" alt="auctioning platform screenshot 6">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot7.png" alt="auctioning platform screenshot 7">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot8.png" alt="auctioning platform screenshot 8">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot9.png" alt="auctioning platform screenshot 9">
+                    </div>
+                    <div class="carousel-slide2">
+                        <img src="./images/auctioning/screenshot10.png" alt="auctioning platform screenshot 10">
+                    </div>
+                </div>
+                <p class="text-center">A system where the products or goods can be purchased or sold through bidding.</p>
+            </div>
+
+            <div class="carousel-container border">
+                <div class="carousel">
+                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_AmLKxs1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <p class="text-center">This project’s aim is to digitize bursary application and allocation processes (in Kenya).</p>
+                </div>
+            </div>
+
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-slide3">
+                        <img src="./images/pizza/screenshot1.png" alt="pizza app screenshot 1">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/pizza/screenshot2.png" alt="pizza app screenshot 2">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/pizza/screenshot3.png" alt="pizza app screenshot 3">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/pizza/screenshot4.png" alt="pizza app screenshot 4">
+                    </div>
+                </div>
+                <p class="text-center">App that can manage orders of foods from restaurants, in this, pizzas were used.</p>
+            </div>
+
+            <!-- <div class="carousel-container">
+                <iframe src="[![Top Langs](https://github-stats-drab.vercel.app/api/top-langs/?username=Michael-Murage&show_icons=true&theme=transparent&count_private=true&langs_count=10&layout=compact&hide=blade,scss)](https://github.com/anuraghazra/github-readme-stats)" frameborder="0"></iframe>
+                <p class="text-center">This project’s aim is to digitize bursary application and allocation processes (in Kenya).</p>
+            </div> -->
+        </div>
+        <!--  -->
+        <!-- lucie consultancy -->
+        <!-- pizza app -->
+        <!-- school admissions -->
+    </section>
+    
+    <!-- <section id="services">
+        <h2 class="text-center"><a class="line contact" href="#portfolio">Services</a></h2>
+    </section> -->
+    
+    
+    <!-- <section id="like" class="like">
+    <h2 class="line contact text-center">WHAT DO YOU LIKE?/WHAT ARE YOUR HOBBIES?</h2>
     <p>
         I like generally almost anything tech related, be it computers, servers, sattelites name it, 
         there's little in the tech industry that I am uninterested in.
@@ -66,12 +199,22 @@
     <figure class="achievement" id="codes">
         <img src="./images/codes.jpg" alt="JS-codes"/>
     </figure>
-    </section>
-    <footer>
-        <p>For more information, you can reach me on email at:</p>
-        <div class="icons">
-            <p class="name contact">mickeymurage@gmail.com</p>
+    </section> -->
+    <hr/>
+    <footer class="text-center" id="footer">
+        <!-- <p class="text-small">For more information, you can reach me on email at:</p> -->
+        <!-- <div class="icons">
+            <p class="name contact text-small">mickeymurage@gmail.com</p>
+        </div> -->
+        <div style="display: flex; justify-content: center;">
+            <a href="https://www.linkedin.com/in/michael-murage-b55aa722b">
+                <img src="./images/linkedin-logo.png" alt="linkedin logo">
+            </a>
+            <a href="mailto:mickeymurage@gmail.com">
+                <img src="./images/gmail-logo.jpeg" alt="email logo">
+            </a>
         </div>
+        <p class="text-small">Copyright © <span id="date-now"></span> Michael Murage</p>
     </footer>
     <script src="./index.js"></script>
 </body>

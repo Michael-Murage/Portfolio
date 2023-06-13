@@ -1,3 +1,7 @@
+:root{
+    --brown: rgb(137, 102, 52);
+    --blue: #2a3faa;
+}
 .whoami, .do, .like, .achievement{
     display: flex;
     flex-direction: column;
@@ -32,7 +36,7 @@ footer{
     height: 100px;
 }
 *{
-    color: lightgray;
+    color: #222;
     /* background-color: #222; */
     box-sizing: border-box;
     /* border: 1px solid green; */
@@ -44,11 +48,11 @@ footer{
 #nav-container{
     height: 100px;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
-    background-color: #111;
-    margin-left: 0;
-    box-shadow: black;
+    background-color: #aaa;
+    /* margin-left: 0; */
+    /* box-shadow: black; */
 }
 .nav-contacts{
     display: flex;
@@ -58,14 +62,209 @@ footer{
     font-family: oswald, sans-serif;
     letter-spacing: 1em;
     font-weight: 700;
-    color: #3c98f5;
+    /* color: #3c98f5; */
+    color: var(--brown)
 }
 body{
-    background-color: #222;
+    background-color: #ccc;
+    font-family: source sans pro;
 }
 .line{
     text-decoration: underline;
 }
 li::marker, .contact{
-    color: #3c98f5;
+    color: var(--brown);
+}
+#footer img{
+    height: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    /* width: 70px; */
+    border-radius: 10px;
+}
+.text-center{
+    text-align: center;
+}
+#typing-effect{
+    display: inline-block;
+    /* border-right: 0.1em solid #fed; */
+    font-size: xx-large;
+    padding-right: 2px;
+}
+.cursor{
+    display: inline-block;
+    width: 3px;
+    height: 30px;
+    background-color: var(--brown);
+    animation: typing-cursor 1s infinite;
+}
+.text-small{
+    font-size: medium;
+}
+.border{
+    border: gray solid 1px;
+}
+.carousel-container{
+    /* border: #222 solid 1px; */
+    width: 40%;
+}
+.carousel img{
+    width: 100%;
+    height: auto;
+}
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+.carousel-slide1, .carousel-slide2, .carousel-slide3 {
+    display: none;
+    transition: opacity 0.5s ease-in-out;
+}
+.carousel-slide1.active, .carousel-slide2.active, .carousel-slide3.active{
+    display: block;
+    opacity: 1;
+}
+.slide-right-to-left-animation {
+    /* for chrome and safari*/
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: slidertl;
+
+    /*for firefox*/
+    -moz-animation-duration: 1s;
+    -moz-animation-name: slidertl;
+
+      /* for opera*/
+    -o-animation-duration: 1s;
+    -o-animation-name: slidertl;
+
+      /* Standard syntax*/
+    animation-duration: 1s;
+    animation-name: slidertl;
+}
+.slide-left-to-right-animation {
+    /* for chrome and safari*/
+    -webkit-animation-duration: 1s;
+    -webkit-animation-name: slideltr;
+
+    /*for firefox*/
+    -moz-animation-duration: 1s;
+    -moz-animation-name: slideltr;
+
+      /* for opera*/
+    -o-animation-duration: 1s;
+    -o-animation-name: slideltr;
+
+      /* Standard syntax*/
+    animation-duration: 1s;
+    animation-name: slideltr;
+}
+/* right to left */
+@-webkit-keyframes slidertl {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+@-moz-keyframes slidertl {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+ @-o-keyframes slidertl {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+  @keyframes slidertl {
+    from {
+        margin-left: 100%;
+        width: 100%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+/* end of right to left */
+
+/* left to right */
+@-webkit-keyframes slideltr {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+
+@-moz-keyframes slideltr {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+ @-o-keyframes slideltr {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+  @keyframes slideltr {
+    from {
+        margin-left: 0%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 100%;
+        width: 100%;
+    }
+}
+/* end of left to right */
+
+@keyframes typing-cursor{
+    0%, 25% {
+        opacity: 0;
+    }
+    26%, 50% {
+        opacity: 0.1;
+    }
+    51%, 75% {
+        opacity: 1;
+    }
+    76%, 100% {
+        opacity: 0.1;
+    }
 }
