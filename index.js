@@ -70,6 +70,7 @@ const dateNow = document.getElementById('date-now');
 const now = new Date();
 
 dateNow.textContent = now.getFullYear();
+dateNow.classList.add('text-md');
 
 /* Carousel setup */
 const slides1 = document.querySelectorAll('.carousel-slide1');

@@ -1,6 +1,8 @@
 :root{
     --brown: rgb(137, 102, 52);
     --blue: #2a3faa;
+    --dark: #222;
+    --light: #ccc;
 }
 .whoami, .do, .like, .achievement{
     display: flex;
@@ -8,9 +10,9 @@
     justify-content: space-around;
 }
 p, li{
-    font-size: 23px;
+    /* font-size: 23px; */
 }
-h2{
+h2, h2 a{
     font-size: 28px;
 }
 figure{
@@ -23,11 +25,6 @@ figure{
 #span{
     font-size: 13px;
 }
-#twitter, #whatsapp{
-    width: 25px;
-    height: 25px;
-    border-radius: 10px;
-}
 footer{
     margin: auto;
 }
@@ -36,9 +33,10 @@ footer{
     height: 100px;
 }
 *{
-    color: #222;
+    color: var(--light);
     /* background-color: #222; */
     box-sizing: border-box;
+    font-size: medium;
     /* border: 1px solid green; */
     /* margin: 0; */
 }
@@ -66,7 +64,7 @@ footer{
     color: var(--brown)
 }
 body{
-    background-color: #ccc;
+    background-color: var(--dark);
     font-family: source sans pro;
 }
 .line{
@@ -99,6 +97,9 @@ li::marker, .contact{
     animation: typing-cursor 1s infinite;
 }
 .text-small{
+    font-size: small;
+}
+.text-md {
     font-size: medium;
 }
 .border{
@@ -123,6 +124,18 @@ li::marker, .contact{
 .carousel-slide1.active, .carousel-slide2.active, .carousel-slide3.active{
     display: block;
     opacity: 1;
+}
+.wrap-sm-nowrap-md {
+    display: flex;
+}
+.footer-svg {
+    stroke: var(--brown);
+    fill: var(--light);
+    width: 20px;
+    height: 20px;
+}
+.vt323 {
+    font-family: vt323;
 }
 .slide-right-to-left-animation {
     /* for chrome and safari*/
@@ -266,5 +279,16 @@ li::marker, .contact{
     }
     76%, 100% {
         opacity: 0.1;
+    }
+}
+@media screen and (min-width:360px) and (max-width:759px) {
+    .wrap-sm-nowrap-md {
+        flex-direction: column;
+    }
+}
+@media screen and (min-width: 760px) {
+    .wrap-sm-nowrap-md {
+        flex-wrap: nowrap;
+        justify-content: space-around;
     }
 }
