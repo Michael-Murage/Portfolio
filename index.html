@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./contact.css">
     <link id="google-fonts-url" rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=VT323:wght@400&amp;family=VT323&amp;family=Playfair+Display:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;family=Poppins:wght@700&amp;family=Lato:wght@400&amp;family=Montserrat:wght@700&amp;family=Lato:wght@400&amp;family=Rubik:wght@700&amp;family=Karla:wght@400&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto:wght@400&amp;family=Merriweather:wght@700&amp;family=Inter:wght@400&amp;family=Vollkorn:wght@700&amp;family=Open+Sans:wght@400&amp;family=Open+Sans:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap">
 </head>
@@ -23,7 +24,16 @@
     <section id="whoami" class="whoami">
         <div class="wrap-sm-nowrap-md">
             <div>
-                <h2 style="font-family: poppins;" class="text-center contact" id="hi">Hi there, I am a ...</h2>
+              <div id="loading-effect">
+                <h2 
+                  style="font-family: poppins;" 
+                  class="text-center contact" 
+                  id="hi"
+                >
+                  Hi there, I am a <span class="dot-typing"></span>
+                </h2>
+                <!-- <div class="dot-typing"></div> -->
+              </div>
                 <div class="text-center vt323" style="display: inline-block;font-family: vt323;">
                     <!-- <span style="font-size: 30px;"><"</span> -->
                     <p id="typing-effect" style="color: var(--brown)">
@@ -40,10 +50,8 @@
     
     </section>
     <section id="do" class="do">
-        <h2 class="text-center">
-            <a id="about" class="line contact" href="#about">About Me</a>
-        </h2>
-    <p>
+        <h2 class="text-center"><a class="contact line" href="#about">About Me <span class=""></span></a></h2>
+        <p>
         I am highly skilled in creating visually appealing, user-friendly and high quality web applications.
          I possess a solid understanding of back-end technologies, enabling seamless integration
          between front-end and back-end systems.
@@ -54,7 +62,7 @@
     </section>
     
     <section id="portfolio">
-        <h2 class="text-center"><a class="line contact" href="#portfolio">Portfolio</a></h2>
+        <h2 class="text-center"><a class="contact line" href="#portfolio">Portfolio <span class=""></span></a></h2>
         <div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
             <div class="carousel-container">
                 <div class="carousel">
@@ -127,7 +135,7 @@
 
             <div class="carousel-container border">
                 <div class="carousel">
-                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_AmLKxs1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    <!-- <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_AmLKxs1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
                     <p class="text-center">This project’s aim is to digitize bursary application and allocation processes (in Kenya).</p>
                 </div>
             </div>
@@ -152,6 +160,37 @@
 
         </div>
     </section>
+
+    <!-- <section id="contact">
+      <h2 class="text-center"><a class="contact line" href="#contact">Contact <span class=""></span></a></h2>
+      <div class="login-box">
+      
+        <form>
+          <div class="user-box">
+            <input type="text" id="contact-name" required="">
+            <label for="contact-name">Name</label>
+          </div>
+          <div class="user-box">
+            <input type="email" id="contact-email" required="">
+            <label for="contact-email">Email</label>
+          </div>
+          <div class="user-box">
+            <input type="text" id="contact-subject" required="">
+            <label for="contact-subject">Subject</label>
+          </div>
+          <div class="user-box">
+            <textarea type="text" id="contact-message" required=""></textarea>
+            <label for="contact-message">Message</label>
+          </div>
+          <center>
+            <a href="#">
+                   SEND
+               <span></span>
+            </a>
+          </center>
+        </form>
+      </div>
+    </section> -->
     
     <hr/>
     <footer class="text-center" id="footer">
