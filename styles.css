@@ -121,6 +121,8 @@ footer{
 body{
     background-color: var(--dark);
     font-family: source sans pro;
+    padding-left: 30px;
+    padding-right: 30px;
 }
 .line{
     text-decoration: underline;
@@ -194,23 +196,23 @@ li::marker, .contact{
 .vt323 {
     font-family: vt323;
 }
-.slide-right-to-left-animation {
-    /* for chrome and safari*/
+/* .slide-right-to-left-animation {
+    for chrome and safari
     -webkit-animation-duration: 1s;
     -webkit-animation-name: slidertl;
 
-    /*for firefox*/
+    for firefox
     -moz-animation-duration: 1s;
     -moz-animation-name: slidertl;
 
-      /* for opera*/
+      for opera
     -o-animation-duration: 1s;
     -o-animation-name: slidertl;
 
-      /* Standard syntax*/
+      Standard syntax
     animation-duration: 1s;
     animation-name: slidertl;
-}
+} */
 .slide-left-to-right-animation {
     /* for chrome and safari*/
     -webkit-animation-duration: 1s;
