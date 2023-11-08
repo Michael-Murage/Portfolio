@@ -50,7 +50,7 @@
   font-size: 12px;
 }
 
-.login-box form a {
+.login-box form button {
   position: relative;
   display: inline-block;
   padding: 10px 20px;
@@ -61,10 +61,12 @@
   overflow: hidden;
   transition: .5s;
   margin-top: 40px;
-  letter-spacing: 4px
+  letter-spacing: 4px;
+  background: transparent;
+  border: none;
 }
 
-.login-box a:hover {
+.login-box button:hover {
   background: var(--brown);
   color: #fff;
   border-radius: 5px;
@@ -74,7 +76,7 @@
               0 0 100px var(--brown);
 }
 
-.login-box a span {
+.login-box button span {
   position: absolute;
   display: block;
 }
@@ -89,7 +91,7 @@
   }
 }
 
-.login-box a span:nth-child(1) {
+.login-box button span:nth-child(1) {
   bottom: 2px;
   left: -100%;
   width: 100%;

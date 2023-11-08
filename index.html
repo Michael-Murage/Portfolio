@@ -13,14 +13,34 @@
     <link id="google-fonts-url" rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=VT323:wght@400&amp;family=VT323&amp;family=Playfair+Display:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;family=Poppins:wght@700&amp;family=Lato:wght@400&amp;family=Montserrat:wght@700&amp;family=Lato:wght@400&amp;family=Rubik:wght@700&amp;family=Karla:wght@400&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto:wght@400&amp;family=Merriweather:wght@700&amp;family=Inter:wght@400&amp;family=Vollkorn:wght@700&amp;family=Open+Sans:wght@400&amp;family=Open+Sans:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script> -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function() {
+          // https://dashboard.emailjs.com/admin/account
+          emailjs.init('cMJHPMNqHRJLJjYih');
+      })();
+  </script>
+  <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+              event.preventDefault();
+              this.contact_number = { value: 0 };
+              // generate a five digit number for the contact_number variable
+              this.contact_number.value = Math.random() * 100000 | 0;
+              // these IDs from the previous steps
+              emailjs.sendForm('service_vtuvdnf', 'template_am54wxd', this)
+                  .then(function() {
+                      console.log('SUCCESS!');
+                  }, function(error) {
+                      console.log('FAILED...', error);
+                  });
+          });
+      }
+  </script>
 </head>
 <body>
     <nav id="nav-container">
-        <!-- <img src="./images/techglobe.jpg" alt="tech-globe" class="nav"> -->
         <h1 id="title-name" style="font-family: vollkorn; ">MICHAEL MURAGE</h1>
-        <!-- <div class="nav-contacts">
-            <a href="https://twitter.com/mickey_murage"><img id="twitter" src="./images/twittericon.png" alt="twitter" ></a>
-        </div> -->
     </nav>
     <section id="whoami" class="whoami">
         <div class="wrap-sm-nowrap-md">
@@ -53,13 +73,10 @@
     <section id="do" class="do">
         <h2 class="text-center"><a class="contact line" href="#about">About Me <span class=""></span></a></h2>
         <p>
-        I am highly skilled in creating visually appealing, user-friendly and high quality web applications.
-         I possess a solid understanding of back-end technologies, enabling seamless integration
-         between front-end and back-end systems.
-    </p>
-    <!-- <figure class="do"> -->
-    <!-- <img src="./images/binary.jpg" alt="binarycodes"/> -->
-    <!-- </figure> -->
+          I am highly skilled in creating visually appealing, user-friendly and high quality web applications.
+           I possess a solid understanding of back-end technologies, enabling seamless integration
+           between front-end and back-end systems.
+        </p>
     </section>
     
     <section id="portfolio">
@@ -162,36 +179,36 @@
         </div>
     </section>
 
-    <!-- <section id="contact">
+    <section id="contact">
       <h2 class="text-center"><a class="contact line" href="#contact">Contact <span class=""></span></a></h2>
       <div class="login-box">
       
-        <form>
+        <form id="contact-form">
           <div class="user-box">
-            <input type="text" id="contact-name" required="">
+            <input type="text" id="contact-name" name="user_name" required="">
             <label for="contact-name">Name</label>
           </div>
           <div class="user-box">
-            <input type="email" id="contact-email" required="">
+            <input type="email" id="contact-email" name="user_email" required>
             <label for="contact-email">Email</label>
           </div>
           <div class="user-box">
-            <input type="text" id="contact-subject" required="">
+            <input type="text" id="contact-subject" name="subject">
             <label for="contact-subject">Subject</label>
           </div>
           <div class="user-box">
-            <textarea type="text" id="contact-message" required=""></textarea>
+            <textarea type="text" id="contact-message" name="message" required=""></textarea>
             <label for="contact-message">Message</label>
           </div>
           <center>
-            <a href="#">
-                   SEND
-               <span></span>
-            </a>
+            <button type="submit" >
+              SEND
+              <span></span>
+            </button>
           </center>
         </form>
       </div>
-    </section> -->
+    </section>
     
     <hr/>
     <footer class="text-center" id="footer">
