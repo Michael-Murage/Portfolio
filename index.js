@@ -1,4 +1,4 @@
-const phrases = ['Front-end Engineer', 'Web developer', 'Front-end developer', 'Full Stack Engineer'];
+const phrases = ['Front-end Developer', 'Back-end Engineer', 'Mobile developer', 'Full Stack Developer'];
 const typingSpeed = 100;
 
 let phraseIndex = 0;
@@ -64,9 +64,11 @@ dateNow.classList.add('text-md');
 const slides1 = document.querySelectorAll('.carousel-slide1');
 const slides2 = document.querySelectorAll('.carousel-slide2');
 const slides3 = document.querySelectorAll('.carousel-slide3');
+const slides4 = document.querySelectorAll('.carousel-slide4');
 let currentIndex1 = 0;
 let currentIndex2 = 0;
 let currentIndex3 = 0;
+let currentIndex4 = 0;
 
 function showSlide1(idx) {
     slides1.forEach(slide => {
@@ -124,3 +126,77 @@ function nextSlide3() {
 }
 
 setInterval(nextSlide3, 4000);
+
+function showSlide4(idx) {
+  slides4.forEach(slide => {
+      slide.classList.remove('active')
+      slide.classList.remove('slide-right-to-left-animation');
+  });
+  slides4[idx].classList.add('active');
+  slides4[idx].classList.add('slide-right-to-left-animation');
+}
+
+function nextSlide4() {
+  currentIndex4++;
+  if (currentIndex4 >= slides4.length) {
+    currentIndex4 = 0;
+  }
+  showSlide4(currentIndex4);
+}
+
+setInterval(nextSlide4, 4000);
+
+
+
+
+// let mybutton = document.getElementById("btn-back-to-top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+// window.onscroll = function () {
+//   scrollFunction();
+// };
+
+// function scrollFunction() {
+//   if (
+//     document.body.scrollTop > 20 ||
+//     document.documentElement.scrollTop > 20
+//   ) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// }
+// When the user clicks on the button, scroll to the top of the document
+// mybutton.addEventListener("click", backToTop);
+
+function backToTop() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+
+ AOS.init({
+// Global settings:
+debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+
+
+ });
+
+ AOS.init({
+  // AOS would work only for windows bigger than or equal to 768px
+  disable: function() { var maxWidth = 768; return window.innerWidth < maxWidth; }
+});
+
+
+// Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+
+AOS.init({
+
+ mirror: true, // whether elements should animate out while scrolling past them          
+
+  });
+
+AOS.init({
+  
+once: false, // whether animation should happen only once - while scrolling down
+
+  });

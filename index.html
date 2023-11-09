@@ -4,14 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Michael Murage Porfolio</title>
+    <meta name="description" content="Michael Murage Portfolio">
+    <meta name="keywords" content="Software Developer, Software Engineer, Personal Portfolio, Laravel Developer, Rails Developer, Angular developer, React developer, Frontend Software Developer, Frontend Engineer, Full Stack Developer">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./styles.css"/>
+    <link rel="stylesheet" href="./alternate.css"/>
     <link rel="stylesheet" href="./contact.css">
     <link id="google-fonts-url" rel="stylesheet" 
         href="https://fonts.googleapis.com/css2?family=VT323:wght@400&amp;family=VT323&amp;family=Playfair+Display:wght@700&amp;family=Source+Sans+Pro:wght@400&amp;family=Poppins:wght@700&amp;family=Lato:wght@400&amp;family=Montserrat:wght@700&amp;family=Lato:wght@400&amp;family=Rubik:wght@700&amp;family=Karla:wght@400&amp;family=Roboto+Condensed:wght@700&amp;family=Roboto:wght@400&amp;family=Merriweather:wght@700&amp;family=Inter:wght@400&amp;family=Vollkorn:wght@700&amp;family=Open+Sans:wght@400&amp;family=Open+Sans:wght@700&amp;family=Work+Sans:wght@400&amp;display=swap">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" defer></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -19,6 +25,19 @@
           // https://dashboard.emailjs.com/admin/account
           emailjs.init('cMJHPMNqHRJLJjYih');
       })();
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "Michael Murage",
+      "url": "https://michael-murage.github.io/Portfolio",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://michael-murage.github.io/Portfolio/search?q=michael+murage{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
   </script>
   <script type="text/javascript">
       window.onload = function() {
@@ -39,10 +58,106 @@
   </script>
 </head>
 <body>
-    <nav id="nav-container">
+    <!-- <nav id="nav-container">
         <h1 id="title-name" style="font-family: vollkorn; ">MICHAEL MURAGE</h1>
-    </nav>
-    <section id="whoami" class="whoami">
+    </nav> -->
+    <header id="header">
+      <div class="container">
+          <h1>Michael Murage</h1>
+          <div class="text-center vt323" style="display: inline-block;">
+            <h2 id="typing-effect" style="color: var(--brown)"></h2>
+            <span class="cursor"></span>
+          </div>
+          <h2>from Nairobi, Kenya</h2>
+
+          <nav id="navbar" class="navbar">
+              <ul>
+                  <li><a class="nav-link" href="#about">About Me</a> </li>
+                  <li><a class="nav-link" href="#resume">Resume</a></li>
+                  <li><a class="nav-link" href="#projects">Projects</a></li>
+                  <li><a class="nav-link" href="#contact">Contact</a></li>
+              </ul>
+              <!--<i class="bi bi-list mobile-nav-toggle"></i>-->
+
+          </nav>
+
+          <!-- <div class="social-links">
+              
+              <a href="https://github.com/Michael-Murage" target="”_blank”" class="github">
+                  <ion-icon name="logo-github" aria-hidden="true"></ion-icon>
+              </a>
+              <a href="https://www.linkedin.com/in/Michael-Murage" target="”_blank”" class="linkedin">
+                  <ion-icon name="logo-linkedin" aria-hidden="true"></ion-icon>
+              </a>
+          </div> -->
+
+      </div>
+
+  </header>
+
+
+  <div data-aos="fade-right" data-aos-duration="2000" data-aos-offset="300" data-aos-easing="ease-in-sine">
+    <section id="about" class="about">
+
+      <div class="about-me container pt-5">
+        <div class="section-title">
+            <h2>About</h2>
+            <p>More about me</p>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-4">
+                <img src="./images/personal_pic.jpg" alt="" loading="lazy" width="250" height="250" style="border-radius: 100%;">
+            </div>
+            <div class="col-lg-8 pt-4 pt-lg-0 content">
+                <h3>Full Stack Software Developer</h3>
+                <p class="fst-italic">
+                    Highly skilled Software Developer committed to delivering high quality software solutions. Proficient in languages 
+                    including JavaScript, Ruby, Python and Java, frameworks such as React, Angular, Vue, Next,
+                    Nuxt, Laravel and Springboot and runtime environments such as Nodejs. Experienced in
+                    user interface, testing, and debugging processes. Able to learn and adapt quickly. 
+                    Effective self-leader and manager and a reliable team player when it comes to working with others.
+                </p>
+                <br/>
+                <div class="row">
+                    <!-- <div class="col-lg-6">
+                        
+
+                    </div> -->
+                    <div class="col-lg-6">
+                        <ul>
+                            <li>
+                                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                <strong>Qualification:</strong>
+                                <span>Bsc. Mathematics</span>
+                            </li>
+                            <li>
+                                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                <strong>Email:</strong> <span>
+                                    <a href="mailto:michaelmuragem@gmail.com">michaelmuragem@gmail.com</a></span>
+                            </li>
+                            <li>
+                                <ion-icon name="chevron-forward-outline" aria-hidden="true"></ion-icon>
+                                <strong>Freelance:</strong>
+                                <span>Available</span>
+                            </li>
+                            <li>
+                              <strong>CV:</strong>
+                              <a class="demo" href="./files/Michael-Murage-Resume.pdf" target="_blank">Download CV</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+
+    <!-- <section id="whoami" class="whoami">
         <div class="wrap-sm-nowrap-md">
             <div>
               <div id="loading-effect">
@@ -53,15 +168,12 @@
                 >
                   Hi there, I am a <span class="dot-typing"></span>
                 </h2>
-                <!-- <div class="dot-typing"></div> -->
               </div>
                 <div class="text-center vt323" style="display: inline-block;font-family: vt323;">
-                    <!-- <span style="font-size: 30px;"><"</span> -->
                     <p id="typing-effect" style="color: var(--brown)">
 
                     </p>
                     <span class="cursor"></span>
-                    <!-- <span style="font-size: 30px;">"></span> -->
                 </div>
             </div>
             <figure >
@@ -77,7 +189,7 @@
            I possess a solid understanding of back-end technologies, enabling seamless integration
            between front-end and back-end systems.
         </p>
-    </section>
+    </section> -->
     
     <section id="portfolio">
         <h2 class="text-center"><a class="contact line" href="#portfolio">Portfolio <span class=""></span></a></h2>
@@ -144,32 +256,59 @@
                     <div class="carousel-slide2">
                         <img src="./images/auctioning/screenshot9.png" alt="auctioning platform screenshot 9">
                     </div>
-                    <div class="carousel-slide2">
-                        <img src="./images/auctioning/screenshot10.png" alt="auctioning platform screenshot 10">
-                    </div>
                 </div>
                 <p class="text-center">A system where the products or goods can be purchased or sold through bidding.</p>
             </div>
 
-            <div class="carousel-container border">
+            <div class="carousel-container">
                 <div class="carousel">
-                    <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_AmLKxs1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    <p class="text-center">This project’s aim is to digitize bursary application and allocation processes (in Kenya).</p>
+                    <!-- <iframe width="100%" height="auto" src="https://www.youtube.com/embed/5_AmLKxs1jY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> -->
+                    <div class="carousel-slide3">
+                      <img src="./images/bursary/screenshot1.png" alt="bursary platform screenshot 1">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot2.png" alt="bursary platform screenshot 2">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot3.png" alt="bursary platform screenshot 3">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot4.png" alt="bursary platform screenshot 4">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot5.png" alt="bursary platform screenshot 5">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot6.png" alt="bursary platform screenshot 6">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot7.png" alt="bursary platform screenshot 7">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot8.png" alt="bursary platform screenshot 8">
+                    </div>
+                    <div class="carousel-slide3">
+                        <img src="./images/bursary/screenshot9.png" alt="bursary platform screenshot 9">
+                    </div>
+                    <div class="carousel-slide3">
+                      <img src="./images/bursary/screenshot10.png" alt="bursary platform screenshot 9">
+                    </div>
                 </div>
+                <p class="text-center">This project’s aim is to digitize bursary application and allocation processes (in Kenya).</p>
             </div>
 
             <div class="carousel-container">
                 <div class="carousel">
-                    <div class="carousel-slide3">
+                    <div class="carousel-slide4">
                         <img src="./images/pizza/screenshot1.png" alt="pizza app screenshot 1">
                     </div>
-                    <div class="carousel-slide3">
+                    <div class="carousel-slide4">
                         <img src="./images/pizza/screenshot2.png" alt="pizza app screenshot 2">
                     </div>
-                    <div class="carousel-slide3">
+                    <div class="carousel-slide4">
                         <img src="./images/pizza/screenshot3.png" alt="pizza app screenshot 3">
                     </div>
-                    <div class="carousel-slide3">
+                    <div class="carousel-slide4">
                         <img src="./images/pizza/screenshot4.png" alt="pizza app screenshot 4">
                     </div>
                 </div>
@@ -224,6 +363,7 @@
         </div>
         <p class="text-md vt323">Copyright © <span id="date-now"></span> Michael Murage</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./index.js"></script>
 </body>
 </html>
