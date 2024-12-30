@@ -68,6 +68,16 @@ h2, h2 a{
   animation: typing-cursor 1s infinite;
 }
 
+#bursary-demo a {
+  text-decoration: none;
+  color: white;
+}
+
+#bursary-demo a:hover {
+  text-decoration: underline;
+  color: blue;
+}
+
 @keyframes typing-cursor{
   0%, 25% {
       opacity: 0;
