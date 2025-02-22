@@ -1,23 +1,10 @@
-p, li{
-    /* font-size: 23px; */
-}
-
-#hi {
-  display: inline;
-}
 /* Dot effect */
-
-#loading-effect {
-  display: block;
-}
-
 .contact {
   display: inline-block;
 }
 
-.dot-typing {
+/* .dot-typing {
   position: relative;
-  /* left: -9999px; */
   left: -9785px;
   bottom: 10px;
   width: 10px;
@@ -52,18 +39,10 @@ p, li{
   100% {
     box-shadow: 9984px 0 0 0 var(--brown), 9999px 0 0 0 var(--brown), 10014px 0 0 0 var(--brown);
   }
-}
+} */
 
 
 /* End of dot effect */
-
-figure{
-    max-width: 100%;
-    height: auto;
-}
-#processor{
-    text-align: right;
-}
 #span{
     font-size: 13px;
 }
