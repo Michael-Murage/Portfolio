@@ -68,12 +68,12 @@ h2, h2 a{
   animation: typing-cursor 1s infinite;
 }
 
-#bursary-demo a {
+.carousel-container a {
   text-decoration: none;
   color: white;
 }
 
-#bursary-demo a:hover {
+.carousel-container a:hover {
   text-decoration: underline;
   color: blue;
 }
