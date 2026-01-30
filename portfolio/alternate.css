@@ -130,11 +130,12 @@ li::marker, .contact{
 .carousel img{
     width: 100%;
     height: auto;
+    max-height: 200px;
 }
 .carousel {
     width: 100%;
+    height: 200px;
     overflow: hidden;
-
 }
 .carousel-slide1, .carousel-slide2, .carousel-slide3, .carousel-slide4 {
     display: none;
@@ -152,6 +153,8 @@ li::marker, .contact{
     fill: var(--light);
     width: 20px;
     height: 20px;
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 /* .slide-right-to-left-animation {

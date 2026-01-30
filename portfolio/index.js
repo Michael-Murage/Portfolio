@@ -1,9 +1,21 @@
-const phrases = ['Front-end Developer', 'Back-end Engineer', 'Mobile developer', 'Full Stack Developer'];
+const title = 'Software Engineer';
+const phrases = [
+    'Front-end Development',
+    'Back-end Development',
+    'Database Design and Administration',
+    'Devops and Automation',
+    'Architectural Scaling and Optimisation',
+];
 const typingSpeed = 100;
 
 let phraseIndex = 0;
 let charIndex = 0;
+let titleCharIndex = 0;
 const typingEffect = document.getElementById('typing-effect');
+const titleTypingEffect = document.getElementById('title-typing-effect');
+const titleCursor = document.getElementsByClassName('cursor-title')[0];
+const servicesCursor = document.getElementsByClassName('cursor')[0];
+titleCursor?.classList?.add('cursor-animation');
 
 function typeText() {
     if (phraseIndex < phrases.length) {
@@ -25,6 +37,18 @@ function typeText() {
     }
 }
 
+function typeTitleText() {
+    if (titleCharIndex < title.length) {
+        titleTypingEffect.textContent += title.charAt(titleCharIndex);
+        titleCharIndex++;
+        setTimeout(typeTitleText, typingSpeed);
+    } else {
+        titleCursor?.classList?.remove('cursor-animation');
+        servicesCursor?.classList?.add('cursor-animation');
+        typeText();
+    }
+}
+
 function eraseText() {
     const currentPhrase = phrases[phraseIndex];
     if (charIndex > 0) {
@@ -38,21 +62,23 @@ function eraseText() {
     }
 }
 
-function addCursor() {
+function addCursor(effectClass) {
     const cursorSpan = document.createElement('span');
     cursorSpan.className = 'cursor';
-    typingEffect.appendChild(cursorSpan);
+    effectClass.appendChild(cursorSpan);
 }
 
-function removeCursor() {
+function removeCursor(effectClass) {
     const cursorSpan = document.querySelector('.cursor');
     if (cursorSpan) {
-        typingEffect.removeChild(cursorSpan);
+        effectClass.removeChild(cursorSpan);
     }
 }
 
-addCursor();
-typeText();
+addCursor(titleTypingEffect);
+addCursor(typingEffect);
+typeTitleText();
+// typeText();
 
 const dateNow = document.getElementById('date-now');
 const now = new Date();

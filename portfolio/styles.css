@@ -54,18 +54,30 @@ h2, h2 a{
   font-size: 28px;
 }
 
-#typing-effect{
+#typing-effect, #title-typing-effect{
   display: inline-block;
-  font-size: xx-large;
+  /* font-size: xx-large; */
+  font-size: 40px;
   padding-right: 2px;
 }
 
-.cursor{
-  display: inline-block;
+.cursor-title {
   width: 3px;
-  height: 30px;
+  height: 100%;
   background-color: var(--brown);
+}
+
+.cursor-animation {
+  display: inline-block;
   animation: typing-cursor 1s infinite;
+}
+
+.cursor{
+  /* display: inline-block; */
+  width: 3px;
+  height: 100%;
+  background-color: var(--brown);
+  /* animation: typing-cursor 1s infinite; */
 }
 
 .carousel-container a {

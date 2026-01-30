@@ -296,7 +296,7 @@
 .navbar li:hover>a:before,
 .navbar .active:before {
     visibility: visible;
-    width: 25px;
+    width: 100%;
 }
 
 .navbar a:hover,
