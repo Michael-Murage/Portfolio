@@ -56,7 +56,6 @@ h2, h2 a{
 
 #typing-effect, #title-typing-effect{
   display: inline-block;
-  /* font-size: xx-large; */
   font-size: 40px;
   padding-right: 2px;
 }
@@ -73,11 +72,9 @@ h2, h2 a{
 }
 
 .cursor{
-  /* display: inline-block; */
   width: 3px;
   height: 100%;
   background-color: var(--brown);
-  /* animation: typing-cursor 1s infinite; */
 }
 
 .carousel-container a {

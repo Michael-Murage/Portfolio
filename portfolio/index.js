@@ -2,9 +2,11 @@ const title = 'Software Engineer';
 const phrases = [
     'Front-end Development',
     'Back-end Development',
-    'Database Design and Administration',
+    'Database Design',
+    'Database Administration',
     'Devops and Automation',
-    'Architectural Scaling and Optimisation',
+    'Architectural Scaling',
+    'Application Optimisation',
 ];
 const typingSpeed = 100;
 
